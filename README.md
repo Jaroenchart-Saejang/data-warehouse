@@ -4,4 +4,4 @@ This project illustrates the basic medallion architecture data warehouse process
 
 # The Data Model
 
-![alt text](\DataModel-1.jpg)
+![alt text](/DataModel-1.jpg)
