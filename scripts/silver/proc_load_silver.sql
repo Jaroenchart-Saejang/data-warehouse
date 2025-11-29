@@ -62,6 +62,7 @@ BEGIN
 			END AS cst_gndr, -- Normalize gender values to readable format
 			cst_create_date
 		FROM (
+			-- CLEANING DUBLICATE CUSTOMER RECORDS: Keep only the most recent record per customer
 			SELECT
 				*,
 				ROW_NUMBER() OVER (PARTITION BY cst_id ORDER BY cst_create_date DESC) AS flag_last

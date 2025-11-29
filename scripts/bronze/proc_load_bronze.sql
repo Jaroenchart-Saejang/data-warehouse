@@ -19,7 +19,7 @@ BEGIN
 			FIELDTERMINATOR = ',',
 			TABLOCK
 		);
-		SELECT COUNT(*) FROM bronze.crm_cust_info;
+		SELECT COUNT(*) AS cust_info FROM bronze.crm_cust_info ;
 
 
 		TRUNCATE TABLE bronze.crm_prd_info;
@@ -30,7 +30,7 @@ BEGIN
 			FIELDTERMINATOR = ',',
 			TABLOCK
 		);
-		SELECT COUNT(*) FROM bronze.crm_prd_info;
+		SELECT COUNT(*) AS prd_info FROM bronze.crm_prd_info;
 
 
 		TRUNCATE TABLE bronze.crm_sales_details;
@@ -42,7 +42,7 @@ BEGIN
 			FIELDTERMINATOR = ',',
 			TABLOCK
 		);
-		SELECT COUNT(*) FROM bronze.crm_sales_details;
+		SELECT COUNT(*) AS sales_details FROM bronze.crm_sales_details ;
 
 		-------------
 		PRINT '----------------------------------------';
@@ -58,7 +58,7 @@ BEGIN
 			FIELDTERMINATOR = ',',
 			TABLOCK
 		);
-		SELECT COUNT(*) FROM bronze.erp_cust_az12;
+		SELECT COUNT(*) AS cust_az12 FROM bronze.erp_cust_az12;
 
 
 		TRUNCATE TABLE bronze.erp_loc_a101;
@@ -69,7 +69,7 @@ BEGIN
 			FIELDTERMINATOR = ',',
 			TABLOCK
 		);
-		SELECT COUNT(*) FROM bronze.erp_loc_a101;
+		SELECT COUNT(*) AS loc_a101 FROM bronze.erp_loc_a101 ;
 
 
 		TRUNCATE TABLE bronze.erp_px_cat_g1v2;
@@ -81,7 +81,7 @@ BEGIN
 			FIELDTERMINATOR = ',',
 			TABLOCK
 		);
-		SELECT COUNT(*) FROM bronze.erp_px_cat_g1v2;
+		SELECT COUNT(*) AS px_cat_g1v2 FROM bronze.erp_px_cat_g1v2;
 	END TRY
 	BEGIN CATCH
 		PRINT '========================================';
